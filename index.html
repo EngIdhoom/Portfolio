@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <header class="header">
+        <div class="logo-div">
             <a href="#" class="logo">Portfolio</a>
+        </div>
+        <nav class="navbar">
+            
             <ul class="nav-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -21,13 +24,27 @@
         </nav>
     </header>
     
-    <main>
-        <section id="home" class="container">
+    <main class="main">
+        <!-- <section id="home" class="container"> -->
             <div class="profile">
-                <img src="profile.png" alt="Mohamud Mathope">
-                <h1>Eng. Mohamud Ibrahim Mathope</h1>
-                <p>Professional Engineer | Quality Assurance Officer | Industrial Solutions Expert</p>
+                <img src="profile.png" alt="Profile Image">
+                <div class="profile-text">
+                    <h1>Eng. Mohamud MIbrahim Mathope, PE</h1>
+                    <p>Mechatronics Engineer | Quality Assurance | ISO Management Systems | Web Development | Auditing and Consultancy.</p>
+                </div>
             </div>
+           <div class="About" id="About">
+            <h2>About</h2>
+            <ul>
+                <li>Forward-thinking and results-oriented Professional Engineer</li>
+                <li>Expertise in industrial solutions, plant operations, and maintenance</li>
+                <li>Strong knowledge of quality management and conformity assessment</li>
+                <li>Hands-on experience in applying engineering science and technology</li>
+                <li>Effective both independently and in team environments</li>
+                <li>Demonstrated leadership skills and commitment to continuous learning</li>
+            </ul>
+
+           </div>
             
             <div class="cards">
                 <div class="card">
@@ -43,8 +60,39 @@
                     <h2>Blogs</h2>
                     <p>Insights on engineering, technology, and quality assurance.</p>
                 </div>
+                <div class="card" id="Services">
+                    <h2>Services</h2>
+                    <p>Services provided include:</p>
+                    <ul>
+                        <li>Engineering services</li>
+                        <li>Management system Consultancy</li>
+                        <li>Performance and Risk Management System Consultancy</li>
+                        <li>QA/QC trainig and system development</li>
+                        <li>Web design services</li>
+                    </ul>
+                </div>
             </div>
-        </section>
+            <div class="contact" id="Contact">
+                <form action="#" class="contact-frm">
+                    <h2>Contact Me</h2>
+            
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Your Phone Number" required>
+            
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            
+        <!-- </section> -->
     </main>
 
 </body>
