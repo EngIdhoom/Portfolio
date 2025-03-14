@@ -97,10 +97,10 @@ body {
     border-radius: 10px;
 }
 .profile img {
-    width: 150px;
+    width: 250px;
     transition: transform 0.4s ease;
     position: absolute;
-    left: -180px;
+    left: -250px;
     border-radius: 50%;
 }
 /* .profile:hover img {
@@ -215,7 +215,7 @@ body {
 
 .card {
     background: #222;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     width: 50%;
     text-align: center;
@@ -223,7 +223,7 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background 0.3s ease;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     scroll-margin-top: 100px;
 }
 
@@ -240,6 +240,7 @@ body {
 .card p {
     font-size: 14px;
     line-height: 1.6;
+    margin: 10px;
 }
 #Academic h3{
     margin: 10px;
@@ -262,10 +263,47 @@ body {
 .qualification tr:nth-child(even) {
     background-color: #444;
 }
-#Services li{
-    list-style:disc;
-    text-align: left;
-    padding: 5px;
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.project1, .project2 {
+    background: #abced7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #ccdd0c33;
+    text-align: center;
+    width: 450px;
+}
+.projects img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #7676b8;
+}
+
+.projects h5 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+.projects p {
+    font-size: 14px;
+    color: #000;
+    padding: 0 10px;
+}
+
+.Hashtag {
+    display: inline-block;
+    background: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 5px 3px;
 }
 /* Style Contact form */
 .contact {
