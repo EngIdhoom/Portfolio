@@ -85,7 +85,10 @@ body {
     
 }
 
+
 .profile {
+    margin-top: 60px;
+    margin-bottom: 70px;
     display: flex;
     align-items: center;
     position: relative;
@@ -116,20 +119,63 @@ body {
     flex-direction: column;
     text-align: center;
     flex-grow: 1;
+    line-height: 1.5;
 }
+
 .profile-text h1 {
     margin-bottom: 10px;
+}
+.home-p1{
+    margin: 20px;
+    color: #d1b799;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    padding: 10px;
+    line-height: 1.7;
+}
+.home-p2{
+    margin: 20px;
+    color: #d4cdc4;
+    text-decoration: none;
+    padding: 10px;
+    text-align: justify;
+}
+.social{
+    /* padding: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; 
+}
+.social a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    padding: 5px;
+    color: rgb(148, 182, 182);
+    text-decoration: none;
+    /* width: calc(33.33% - 20px); */
+    /* min-width: 150px; */
+}
+.social a:hover{
+    color: #e08f24;
+    transform: translateY(-10px);
+    transition: transform 0.4s ease;
+    
 }
 .About{
     background: #333;
     padding: 30px;
     border-radius: 10px;
-    width: 40vw;
+    width: 60vw;
     text-align: center;
     color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background 0.3s ease;
-    margin-top: 20px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    scroll-margin-top: 100px;
 }
 .About li{
     list-style:square;
@@ -139,6 +185,14 @@ body {
 .About h2 {
     margin-bottom: 10px;
     color: #e08f24;
+}
+.About h3{
+    margin: 10px;
+    color: aqua;
+}
+.About p{
+    text-align: justify;
+    line-height: 1.5;
 }
 .About:hover {
     transform: translateY(-10px);
@@ -160,11 +214,14 @@ body {
     background: #222;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 50%;
     text-align: center;
     color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background 0.3s ease;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    scroll-margin-top: 100px;
 }
 
 .card:hover {
@@ -181,6 +238,27 @@ body {
     font-size: 14px;
     line-height: 1.6;
 }
+#Academic h3{
+    margin: 10px;
+    color: aqua;
+}
+.qualification{
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+.qualification th, td {
+    border: 1px solid #d1b799;
+    padding: 10px;
+    text-align: left;
+}
+.qualification th {
+    background-color: #d0e14a;
+    color: #271d1d;
+    padding: 5px;
+}
+.qualification tr:nth-child(even) {
+    background-color: #444;
+}
 #Services li{
     list-style:disc;
     text-align: left;
@@ -196,6 +274,9 @@ body {
     margin-top: 20px;
     width: 70vw;
     border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    scroll-margin-top: 100px;
 }
 
 .contact-frm {
@@ -236,7 +317,7 @@ body {
 }
 
 .contact-frm button {
-    width: 10%;
+    width: 20%x;
     padding: 10px;
     background: #e08f24;
     color: white;
@@ -245,7 +326,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background 0.3s ease;
-    margin-left: 45%;
+    margin-left: 0;
 }
 
 .contact-frm button:hover {
